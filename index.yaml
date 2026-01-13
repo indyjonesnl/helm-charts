@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  echo-hostname:
+  - apiVersion: v2
+    appVersion: "6"
+    created: "2026-01-13T09:25:32.829853797Z"
+    description: A Helm chart for Kubernetes
+    digest: 058e9e85019df711634004f1574abe1a5c0c1e0925829f5fe979ff2cfd77933c
+    name: echo-hostname
+    type: application
+    urls:
+    - https://github.com/indyjonesnl/helm-charts/releases/download/echo-hostname-0.1.0/echo-hostname-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-01-13T09:25:32.829859197Z"
