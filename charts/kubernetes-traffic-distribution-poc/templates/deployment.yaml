@@ -1,17 +1,16 @@
-{{- $selectorLabels := include "echo-hostname.selectorLabels" . | nindent 14 -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "echo-hostname.fullname" . }}
+  name: {{ include "kubernetes-traffic-distribution-poc.fullname" . }}
   labels:
-    {{- include "echo-hostname.labels" . | nindent 4 }}
+    {{- include "kubernetes-traffic-distribution-poc.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "echo-hostname.selectorLabels" . | nindent 6 }}
+      {{- include "kubernetes-traffic-distribution-poc.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -19,7 +18,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "echo-hostname.labels" . | nindent 8 }}
+        {{- include "kubernetes-traffic-distribution-poc.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
@@ -28,7 +27,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "echo-hostname.serviceAccountName" . }}
+      serviceAccountName: {{ include "kubernetes-traffic-distribution-poc.serviceAccountName" . }}
       {{- with .Values.podSecurityContext }}
       securityContext:
         {{- toYaml . | nindent 8 }}

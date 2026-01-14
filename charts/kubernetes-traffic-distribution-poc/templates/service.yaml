@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "kubernetes-traffic-distribution-poc.fullname" . }}
+  labels:
+    {{- include "kubernetes-traffic-distribution-poc.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "kubernetes-traffic-distribution-poc.selectorLabels" . | nindent 4 }}
