@@ -24,6 +24,16 @@ entries:
   kubernetes-traffic-distribution-poc:
   - apiVersion: v2
     appVersion: "4"
+    created: "2026-01-14T12:42:21.54873561Z"
+    description: A Helm chart for Kubernetes
+    digest: 6e782316cabd246feb86b60f7ccc9f14a4bdf4a7c4c71f169dfada9b775e341a
+    name: kubernetes-traffic-distribution-poc
+    type: application
+    urls:
+    - https://github.com/indyjonesnl/helm-charts/releases/download/kubernetes-traffic-distribution-poc-0.2.0/kubernetes-traffic-distribution-poc-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: "4"
     created: "2026-01-14T12:22:35.886802346Z"
     description: A Helm chart for Kubernetes
     digest: 49ef788ce756a537896da8a7f06253b52e6d0a7cb2ecf07f2135bb68cc63bd1f
@@ -32,4 +42,4 @@ entries:
     urls:
     - https://github.com/indyjonesnl/helm-charts/releases/download/kubernetes-traffic-distribution-poc-0.1.0/kubernetes-traffic-distribution-poc-0.1.0.tgz
     version: 0.1.0
-generated: "2026-01-14T12:22:35.886814619Z"
+generated: "2026-01-14T12:42:21.548753323Z"
