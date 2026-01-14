@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   echo-hostname:
   - apiVersion: v2
+    appVersion: "7"
+    created: "2026-01-14T12:22:35.679670057Z"
+    description: A Helm chart for Kubernetes
+    digest: 382254c31a857dc372951051ef77a61b51649c07f1a7813cfa87b5e87aaf4ec5
+    name: echo-hostname
+    type: application
+    urls:
+    - https://github.com/indyjonesnl/helm-charts/releases/download/echo-hostname-0.2.0/echo-hostname-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: "6"
     created: "2026-01-13T09:25:32.829853797Z"
     description: A Helm chart for Kubernetes
@@ -11,4 +21,15 @@ entries:
     urls:
     - https://github.com/indyjonesnl/helm-charts/releases/download/echo-hostname-0.1.0/echo-hostname-0.1.0.tgz
     version: 0.1.0
-generated: "2026-01-13T09:25:32.829859197Z"
+  kubernetes-traffic-distribution-poc:
+  - apiVersion: v2
+    appVersion: "4"
+    created: "2026-01-14T12:22:35.886802346Z"
+    description: A Helm chart for Kubernetes
+    digest: 49ef788ce756a537896da8a7f06253b52e6d0a7cb2ecf07f2135bb68cc63bd1f
+    name: kubernetes-traffic-distribution-poc
+    type: application
+    urls:
+    - https://github.com/indyjonesnl/helm-charts/releases/download/kubernetes-traffic-distribution-poc-0.1.0/kubernetes-traffic-distribution-poc-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-01-14T12:22:35.886814619Z"
