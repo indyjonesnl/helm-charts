@@ -1,3 +1,4 @@
+{{- $selectorLabels := include "kubernetes-traffic-distribution-poc.selectorLabels" . | nindent 14 -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
